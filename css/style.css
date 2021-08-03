@@ -659,9 +659,3 @@ table {
 .table__body tr:nth-child(even) {
   background-color: #eee;
 }
-
-@media screen and (max-width: 992px) {
-  .table {
-    height: calc(100vh - 119px);
-  }
-}
