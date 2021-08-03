@@ -681,6 +681,12 @@ table {
   background-color: #eee;
 }
 
+@media screen and (max-width: 992px) {
+  .table {
+    height: calc(100vh - 119px);
+  }
+}
+
 @media screen and (max-width: 425px) {
   .table {
     height: calc(100vh - 186px);
