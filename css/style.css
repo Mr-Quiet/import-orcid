@@ -665,7 +665,7 @@ table {
 
 .table {
   width: calc(100vw - 130px);
-  height: calc(100vh - 136px);
+  height: calc(100vh - 190px);
 }
 
 .table__body {
@@ -729,13 +729,13 @@ table {
 
 @media screen and (max-width: 992px) {
   .table {
-    height: calc(100vh - 119px);
+    height: calc(100vh - 173px);
     width: calc(100vw - 30px);
   }
 }
 
 @media screen and (max-width: 425px) {
   .table {
-    height: calc(100vh - 186px);
+    height: calc(100vh - 245px);
   }
 }
