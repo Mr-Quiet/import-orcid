@@ -683,6 +683,6 @@ table {
 
 @media screen and (max-width: 425px) {
   .table {
-    height: calc(100vh - 206px);
+    height: calc(100vh - 186px);
   }
 }
