@@ -563,7 +563,6 @@ table {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  height: calc(100vh - 136px);
   overflow-x: auto;
 }
 
@@ -594,18 +593,12 @@ table {
   }
   .content__row {
     width: calc(100vw - 30px);
-    height: calc(100vh - 119px);
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .content__row {
-    height: calc(100vh - 150px);
   }
 }
 
 .table {
   width: calc(100vw - 130px);
+  height: calc(100vh - 136px);
 }
 
 .table__body {
@@ -665,4 +658,10 @@ table {
 
 .table__body tr:nth-child(even) {
   background-color: #eee;
+}
+
+@media screen and (max-width: 992px) {
+  .table {
+    height: calc(100vh - 119px);
+  }
 }
