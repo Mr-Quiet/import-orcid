@@ -727,6 +727,48 @@ table {
   background-color: #eee;
 }
 
+.table__body tr button {
+  width: 100%;
+  padding: 5px;
+  font-size: 20px;
+  background: #297aa3;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.table__body tr button:focus {
+  -webkit-box-shadow: 0 0 2px 2px #85c2e0;
+          box-shadow: 0 0 2px 2px #85c2e0;
+}
+
+.table__body tr input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  width: 100%;
+  overflow: hidden;
+  max-width: 100%;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 20px;
+}
+
+.table__body tr input::-webkit-input-placeholder {
+  color: grey;
+}
+
+.table__body tr input:-ms-input-placeholder {
+  color: grey;
+}
+
+.table__body tr input::-ms-input-placeholder {
+  color: grey;
+}
+
+.table__body tr input::placeholder {
+  color: grey;
+}
+
 @media screen and (max-width: 992px) {
   .table {
     height: calc(100vh - 173px);
