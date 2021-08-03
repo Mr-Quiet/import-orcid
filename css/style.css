@@ -622,7 +622,75 @@ table {
           box-shadow: inset 7px 10px 12px 0 #f0f0f0;
 }
 
+.table__number ul {
+  position: fixed;
+  top: 100px;
+  width: calc(100vw - 130px);
+  left: 105px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.table__number ul::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.table__number ul::-webkit-scrollbar-thumb {
+  background: #002e60;
+  border-radius: 3px;
+}
+
+.table__number ul::-webkit-scrollbar-thumb:hover {
+  background: #004693;
+}
+
+.table__number ul::-webkit-scrollbar-track {
+  background: #fff;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 7px 10px 12px 0 #f0f0f0;
+          box-shadow: inset 7px 10px 12px 0 #f0f0f0;
+}
+
+.table__number ul li button {
+  font-size: 16px;
+  border: none;
+  background-color: #fff;
+  padding: 9px 8px;
+  cursor: pointer;
+  border: 1px solid white;
+  border-bottom: 1px solid lightgray;
+  text-decoration: underline;
+}
+
+.table__number ul li button:hover {
+  border: 1px solid lightgray;
+  border-bottom: 1px solid white;
+}
+
+.table__number ul li button:focus {
+  border: 1px solid lightgray;
+  border-bottom: 1px solid white;
+}
+
+.table__number ul li button[data-selected="true"] {
+  border: 1px solid lightgray;
+  border-bottom: 1px solid white;
+}
+
+@media screen and (max-width: 992px) {
+  .table__number ul {
+    width: calc(100vw - 30px);
+    left: 15px;
+    top: 90px;
+  }
+}
+
 .table__body {
+  margin-top: 40px;
   border: 1px solid #d3d3d3;
 }
 
@@ -684,6 +752,10 @@ table {
 @media screen and (max-width: 992px) {
   .table {
     height: calc(100vh - 119px);
+    width: calc(100vw - 30px);
+  }
+  .table__body {
+    margin-top: 45px;
   }
 }
 
