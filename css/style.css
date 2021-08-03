@@ -601,6 +601,27 @@ table {
   height: calc(100vh - 136px);
 }
 
+.table::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.table::-webkit-scrollbar-thumb {
+  background: #002e60;
+  border-radius: 3px;
+}
+
+.table::-webkit-scrollbar-thumb:hover {
+  background: #004693;
+}
+
+.table::-webkit-scrollbar-track {
+  background: #fff;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 7px 10px 12px 0 #f0f0f0;
+          box-shadow: inset 7px 10px 12px 0 #f0f0f0;
+}
+
 .table__body {
   border: 1px solid #d3d3d3;
 }
@@ -658,4 +679,10 @@ table {
 
 .table__body tr:nth-child(even) {
   background-color: #eee;
+}
+
+@media screen and (max-width: 425px) {
+  .table {
+    height: calc(100vh - 156px);
+  }
 }
