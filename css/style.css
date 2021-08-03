@@ -594,7 +594,13 @@ table {
   }
   .content__row {
     width: calc(100vw - 30px);
-/*     height: calc(100vh - 119px); */
+    height: calc(100vh - 119px);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .content__row {
+    height: calc(100vh - 150px);
   }
 }
 
