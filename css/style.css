@@ -596,37 +596,13 @@ table {
   }
 }
 
-.table {
+.numbers {
   width: calc(100vw - 130px);
-  height: calc(100vh - 136px);
+  margin-bottom: 10px;
 }
 
-.table::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
-}
-
-.table::-webkit-scrollbar-thumb {
-  background: #002e60;
-  border-radius: 3px;
-}
-
-.table::-webkit-scrollbar-thumb:hover {
-  background: #004693;
-}
-
-.table::-webkit-scrollbar-track {
-  background: #fff;
-  border-radius: 3px;
-  -webkit-box-shadow: inset 7px 10px 12px 0 #f0f0f0;
-          box-shadow: inset 7px 10px 12px 0 #f0f0f0;
-}
-
-.table__number ul {
-  position: fixed;
-  top: 100px;
-  width: calc(100vw - 130px);
-  left: 105px;
+.numbers ul {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -634,28 +610,28 @@ table {
   overflow-y: hidden;
 }
 
-.table__number ul::-webkit-scrollbar {
+.numbers ul::-webkit-scrollbar {
   width: 5px;
   height: 5px;
 }
 
-.table__number ul::-webkit-scrollbar-thumb {
+.numbers ul::-webkit-scrollbar-thumb {
   background: #002e60;
   border-radius: 3px;
 }
 
-.table__number ul::-webkit-scrollbar-thumb:hover {
+.numbers ul::-webkit-scrollbar-thumb:hover {
   background: #004693;
 }
 
-.table__number ul::-webkit-scrollbar-track {
+.numbers ul::-webkit-scrollbar-track {
   background: #fff;
   border-radius: 3px;
   -webkit-box-shadow: inset 7px 10px 12px 0 #f0f0f0;
           box-shadow: inset 7px 10px 12px 0 #f0f0f0;
 }
 
-.table__number ul li button {
+.numbers ul li button {
   font-size: 16px;
   border: none;
   background-color: #fff;
@@ -666,31 +642,33 @@ table {
   text-decoration: underline;
 }
 
-.table__number ul li button:hover {
+.numbers ul li button:hover {
   border: 1px solid lightgray;
   border-bottom: 1px solid white;
 }
 
-.table__number ul li button:focus {
+.numbers ul li button:focus {
   border: 1px solid lightgray;
   border-bottom: 1px solid white;
 }
 
-.table__number ul li button[data-selected="true"] {
+.numbers ul li button[data-selected="true"] {
   border: 1px solid lightgray;
   border-bottom: 1px solid white;
 }
 
 @media screen and (max-width: 992px) {
-  .table__number ul {
+  .numbers {
     width: calc(100vw - 30px);
-    left: 15px;
-    top: 90px;
   }
 }
 
+.table {
+  width: calc(100vw - 130px);
+  height: calc(100vh - 136px);
+}
+
 .table__body {
-  margin-top: 40px;
   border: 1px solid #d3d3d3;
 }
 
@@ -753,9 +731,6 @@ table {
   .table {
     height: calc(100vh - 119px);
     width: calc(100vw - 30px);
-  }
-  .table__body {
-    margin-top: 45px;
   }
 }
 
